@@ -18,7 +18,7 @@
   "scripts": {
     "clean": "rm -rf build",
     "build": "tsc",
-    "prepack": "tsc",
+    "prepack": "yarn run build",
     "test": "jest --runInBand --detectOpenHandles --forceExit",
     "lint": "polkadot-dev-run-lint",
     "build:docs": "ts-node ./scripts/generate-bridge-document.ts",
